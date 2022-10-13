@@ -1,0 +1,77 @@
+// utils 
+@import './utils/utils.main.scss';
+// modules
+@import './modules/header.scss';
+@import './modules/estonia-inf_section.scss';
+@import './modules/products_section.scss';
+@import './modules/ads_section.scss';
+@import './modules/partners_section.scss';
+@import './modules/crypto-exchange_section.scss';
+@import './modules/app_section.scss';
+@import './modules/affiliate-program_section.scss';
+@import './modules/faq_section.scss';
+@import './modules/footer.scss';
+@import './modules/login-registration-modal.scss';
+.container {
+    max-width: 1574px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#open-mobile-menu {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1%;
+    background: transparent;
+    color: $color_green;
+    font-size: 40px;
+    border-radius: 50%;
+    display: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    background-color: $color_green;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include font(14px, 700, 17px, #192227);
+    &:hover {
+        background-color: #41bb97;
+    }
+}
+
+.shadow_circle {
+    background: rgba(79, 192, 255, 0.15);
+    filter: blur(130px);
+}
+
+//adaptive
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        max-width: 700px;
+    }
+    #open-mobile-menu {
+        display: block;
+        animation: slide-in-bottom__arr 1s 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 400px;
+    }
+}

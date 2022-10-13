@@ -1,0 +1,49 @@
+@import '../utils/utils.main.scss';
+.ads {
+    height: 242px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 83px;
+    .ads_img1,
+    .ads_img2 {
+        position: absolute;
+        z-index: 1;
+    }
+    .ads_img1 {
+        top: 0px;
+        left: 0px;
+    }
+    .ads_img2 {
+        top: 0px;
+        right: 0px;
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+        padding: 0px 29px;
+        @include flex(row, null, null);
+    }
+}
+
+.ads-text-content {
+    @include flex(row, center, center);
+    .ads-text-content__percent {
+        text-transform: uppercase;
+        background: linear-gradient(96deg, #4FFFCA 11.58%, #17E5D0 45.09%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        @include font(180px, 700, 219px, null);
+    }
+    .ads-text-content__text {
+        max-width: 325px;
+        text-transform: uppercase;
+        margin: 0px 47px 0px 25px;
+        @include font(64px, 700, 68px, #EBE7E5);
+    }
+    .ads-btn {
+        width: 200px;
+        height: 48px;
+    }
+}

@@ -1,0 +1,73 @@
+@import '../utils/utils.main.scss';
+.app {
+    padding: 138px 10px 82px;
+    position: relative;
+    .shadow_circle {
+        position: absolute;
+        width: 619px;
+        height: 619px;
+        left: 172px;
+    }
+    .container {
+        max-width: 1280px;
+        position: relative;
+        overflow: hidden;
+        @include flex(row, space-between, flex-start);
+        .app__img-wrap {
+            position: relative;
+            &::after {
+                content: '';
+                height: 1px;
+                width: 1500px;
+                position: absolute;
+                bottom: 131px;
+                left: 235px;
+                z-index: 3;
+                background-color: $color_green;
+            }
+        }
+    }
+}
+
+.app-content {
+    padding-top: 46px;
+    max-width: 664px;
+    text-align: right;
+    @include flex(column, null, flex-end);
+    .app__title {
+        text-transform: uppercase;
+        margin-bottom: 28px;
+        @include font(48px, 700, 55px, $color_white);
+    }
+    .app__text {
+        @include font(20px, 200, 23px, $color_white);
+    }
+    .app__text-last {
+        margin: 20px 0px;
+    }
+    .app-btn {
+        width: 234px;
+        height: 55px;
+        border: 1px solid $color_white;
+        color: $color_white;
+        margin-top: 20px;
+        @include flex(row, center, center);
+        .fa-apple {
+            font-size: 35px;
+            margin-right: 22px;
+        }
+        .app-btn__text {
+            span {
+                display: block;
+                text-align: left;
+                &:first-child {
+                    letter-spacing: 0.00045px;
+                    @include font(12px, 300, 12px, $color_white);
+                }
+                &:last-child {
+                    @include font(24px, 400, 24px, $color_white);
+                }
+            }
+        }
+    }
+}

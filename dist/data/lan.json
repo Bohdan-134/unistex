@@ -1,0 +1,242 @@
+[{
+    "btnLogin": {
+        "en": "Login",
+        "ru": "Вход"
+    },
+    "btnRegistration": {
+        "en": "Registration",
+        "ru": "Регистрация"
+    },
+    "headerContentText": {
+        "en": "zero deposit fee",
+        "ru": "на ввод средств"
+    },
+    "btnStart": {
+        "en": "start",
+        "ru": "начать"
+    },
+    "estoniaInfText": {
+        "en": "Estonian Financial Intelligence Unit (FIU, or RAB in Estonian) is responsible for overseeing crypto activities as well as issuing crypto licenses.",
+        "ru": "Эстонский отдел финансовой разведки (FIU или RAB на эстонском языке) регулирует оборот обмен, выдачу лицензий на проведение операций с криптовалютой."
+    },
+    "startTrading": {
+        "en": "TRADING",
+        "ru": "НАЧАТЬ ТОРГОВЛЮ"
+    },
+    "productsTitle": {
+        "en": "PRODUCTS",
+        "ru": "ТОВАРЫ"
+    },
+    "productItemTitle1": {
+        "en": "Spot platform",
+        "ru": "Спотовая торговля"
+    },
+    "productItemText1-1": {
+        "en": "Customizable interface",
+        "ru": "Кастомизируемый интерфейс"
+    },
+    "productItemText1-2": {
+        "en": "Several types of orders",
+        "ru": "Несколько типов ордеров"
+    },
+    "productItemText1-3": {
+        "en": "Professional charts",
+        "ru": "Мощный матчинговый движок"
+    },
+    "productItemText1-4": {
+        "en": "Powerful match engine",
+        "ru": "Простые в построении графики"
+    },
+    "productItemTitle2": {
+        "en": "Fast Exchange",
+        "ru": "Простой обмен"
+    },
+    "productItemText2": {
+        "en": "Quick purchase/sale of cryptocurrencies in 1 click. Exchange cryptocurrencies and provide security automatically at a fast rate.",
+        "ru": "Быстрая покупка и продажа криптовалюты в один клик. Быстрый и безопасный обмен в автоматическом режиме."
+    },
+    "productItemTitle3": {
+        "en": "Crypto Wallet",
+        "ru": "Криптовалютный кошелек"
+    },
+    "productItemText3": {
+        "en": "All transactions in one cryptocurrency wallet Create your free wallet on UNI Stex to store and transfer cryptocurrencies, as well as fiat funds.",
+        "ru": "Все операции в одном криптовалютном кошельке. Создавай свой бесплатный кошелек, обменивай криптовалюты и фиат."
+    },
+    "productItemTitle4": {
+        "en": "Non-custodial exchanger",
+        "ru": "Некастодиальный обменник"
+    },
+    "productItemText4": {
+        "en": "Non-custodial exchanger (immediately hang up on the partition). Designed for fast and anonymous exchange of cryptocurrencies with fiat funds.",
+        "ru": "Создан специально для быстрого и анонимного обмена криптовалют и фиатных средств."
+    },
+    "productItemTitle5": {
+        "en": "Affiliate Program",
+        "ru": "Партнерская программа"
+    },
+    "productItemText5": {
+        "en": "Become a partner and get profit Invite friends and get up to 60% of the amount of commissions paid by them for trading.",
+        "ru": "Станьте партнером и получайте прибыль от приглашенных друзей. До 60% от суммы комиссий, оплаченных ими за торговлю."
+    },
+    "purposeText": {
+        "en": "Multifunctional blockchain management platform <br> and trading of crypto and digital assets, designed to:",
+        "ru": "Многофункциональная блокчейн-платформа для управления <br> и торговли крипто и цифровыми активами, предназначенная для:"
+    },
+    "purposeItemText1": {
+        "en": "owners of any <br> cryptocurrencies",
+        "ru": "владельцев <br> любых <br> криптовалют"
+    },
+    "purposeItemText2": {
+        "en": "projects that issue <br> their own <br> cryptocurrency or <br> tokens for business",
+        "ru": "проектов, выпускающих свою криптовалюту или токены для бизнеса"
+    },
+    "purposeItemText3": {
+        "en": "commercial <br> organizations wishing <br> to carry out <br> measurements in <br> cryptocurrency",
+        "ru": "комерческих организаций, желающих проводить транзакции в криптовалюте"
+    },
+    "purposeItemText4": {
+        "en": "Cryptocurrency <br> exchange <br> to fiat and back",
+        "ru": "Обмена <br> криптовалют <br> на фиааты и <br> обратно"
+    },
+    "purposeItemText5": {
+        "en": "buying and selling <br> cryptocurrencies",
+        "ru": "покупка и <br> продажа <br> криптовалют"
+    },
+    "bitcoinTitle": {
+        "en": "Buy and sell Bitcoin <br> on the UNI Stex crypto exchange",
+        "ru": "Покупай и продавай Bitcoin <br> на криптобирже UNI Stex"
+    },
+    "bitcoinText": {
+        "en": "<strong>UNI Stex</strong> is a convenient trading platform with natural and contact trading instruments, <br> with help, you can easily trade and exchange cryptocurrency, <br> and also convert it to fiat.",
+        "ru": "<strong>UNI Stex</strong> - удобная торговая площадка с простыми и понятными торговыми инструментами,<br> при помощи которых можно легко торговать и обменивать криптовалюту,<br> а также конвертировать ее в фиаты."
+    },
+    "bitcoinStrongText": {
+        "en": "The main partner in Moldova is BPay",
+        "ru": "Основным партнером по Молдавии является компания BPay"
+    },
+    "buttonRegistration": {
+        "en": "REGISTRATION",
+        "ru": "ЗАРЕГИСТРИРОВАТЬСЯ"
+    },
+    "adsTextContentText": {
+        "en": "deposit fee",
+        "ru": "на ввод средств"
+    },
+    "adsBtn": {
+        "en": "BUY BITCOIN",
+        "ru": "КУПИТЬ BITCOIN"
+    },
+    "partnersTitle": {
+        "en": "PARTNERS",
+        "ru": "партнеры"
+    },
+    "cryptoExchangeTitle": {
+        "en": "ADJUSTABLE <br> <strong>EXCHANGE</strong>",
+        "ru": "<strong>Регулируемая</strong> криптовалютная <strong>биржа</strong>"
+    },
+    "cryptoExchangeItem1": {
+        "en": "MODERN TRADING <strong>TERMINAL</strong>",
+        "ru": "УдобныЙ <strong>интерфейс</strong>"
+    },
+    "cryptoExchangeItem2": {
+        "en": "0% <strong>DEPOSIT FEES</strong>",
+        "ru": "<strong>0% на ввод</strong> средств"
+    },
+    "cryptoExchangeItem3": {
+        "en": "MULTILEVEL <strong>REFERRAL PROGRAM</strong>",
+        "ru": "Многоуровневая <strong>реферальнАЯ программa</strong>"
+    },
+    "cryptoExchangeItem4": {
+        "en": "<strong>FAST</strong> CRYPTOCURRENCY EXCHANGE <strong>WITHOUT REGISTRATION</strong>",
+        "ru": "<strong>БЫСТРЫЙ обменник</strong> без регистрации"
+    },
+    "cryptoExchangeItem5": {
+        "en": "<strong>27/7 SUPPORT</strong>",
+        "ru": "<strong>поддержка 24/7</strong>"
+    },
+    "appTitle": {
+        "en": "Trade Anytime <br> Anywhere",
+        "ru": "Торгуй везде с <br> UNI Stex"
+    },
+    "appText1": {
+        "en": "All UNI Stex services are always with you. <br> Powerful platform for cryptocurrency trading <br> for those who trade to make money.",
+        "ru": "Все сервисы UNI Stex всегда с вами в нашем приложении. <br> Быть всегда на волне тренда – это выбор тех, кто торгует и получает прибыль."
+    },
+    "appText2": {
+        "en": "Download UNI Stex Cryptocurrency Mobile <br> App Today.",
+        "ru": "Скачайте наше приложение и не упускайте прибыльных движений рынка."
+    },
+    "affProgramTitle": {
+        "en": "Affiliate program",
+        "ru": "Партнерская программа"
+    },
+    "affProgramText": {
+        "en": "With the help of the UNI Stex service, you can not only profitably <br>exchange e-currency, but also make good money on it <br> (Affiliate program)<br> You can receive the payment in any way convenient for you <br> presented in your personal account UNI Stex.",
+        "ru": "С помощью сервиса UNI Stex Вы можете не только выгодно <br> обменивать электронную валюту, но и хорошо зарабатывать <br> на этом (Партнерская программа)<br> Выплату сможете получить любым удобным для Вас способом <br> представленным в вашем личном кабинете UNI Stex."
+    },
+    "affProgramButton": {
+        "en": "LINK",
+        "ru": "ПОЛУЧИТЬ ССЫЛКУ"
+    },
+    "faqTitle": {
+        "en": "FAQ",
+        "ru": "Часто задаваемые вопросы"
+    },
+    "accordeonItemTitle1": {
+        "en": "2FA code error",
+        "ru": "Ошибка кода 2FA"
+    },
+    "accordeonItemTitle2": {
+        "en": "How to register an account on the website UNI Stex",
+        "ru": "Как зарегистрировать аккаунт на сайте UNI Stex"
+    },
+    "accordeonItemTitle3": {
+        "en": "How to change the password of your account (Personal Account)",
+        "ru": "Как изменить пароль от своего аккаунта (Личного кабинета)"
+    },
+    "accordeonItemTitle4": {
+        "en": "How to register an account on the website UNI Stex",
+        "ru": "Как зарегистрировать аккаунт на сайте UNI Stex"
+    },
+    "accordeonItemTitle5": {
+        "en": "How to change the password of your account (Personal Account)",
+        "ru": "Как изменить пароль от своего аккаунта (Личного кабинета)"
+    },
+    "accordeonItemTitle6": {
+        "en": "2FA code error",
+        "ru": "Ошибка кода 2FA"
+    },
+    "footerAddressItem1": {
+        "en": "Trade with financial thinking",
+        "ru": "Торгуйте с финансовым мышлением"
+    },
+    "footerAddressItem2": {
+        "en": "Unitechnology OU",
+        "ru": "Юнитехнология OU"
+    },
+    "footerAddressItem3": {
+        "en": "Registry Code – 14731902",
+        "ru": "Регистрационный код — 14731902"
+    },
+    "footerAddressItem4": {
+        "en": "Licence Number – FVT000475",
+        "ru": "Номер лицензии — FVT000475"
+    },
+    "footerAddressItem5": {
+        "en": "Osmussaare tn 8, Lasnamäe Linnaosa,",
+        "ru": "Osmussaare tn 8, Ласнамяэский район,"
+    },
+    "footerAddressItem6": {
+        "en": "Harju Maakond, 13811, Tallinn, Estonia",
+        "ru": "Харьюмаа, 13811, Таллинн, Эстония"
+    },
+    "footerSpoilerTitle": {
+        "en": "Risk warning",
+        "ru": "Предупреждение о рисках"
+    },
+    "footerSpoilerText": {
+        "en": "The financial products offered via this website include digitals, contracts for difference (CFDs), and other complex derivatives and financial products. Trading options may not be suitable for everyone. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage. As a result, the products offered on this website may not be suitable for all investors because of the risk of losing all of your invested capital. You should never invest money that you cannot afford to lose, and never trade with borrowed money. Before trading in the complex financial products offered, please be sure to understand the risks involved and learn about Secure and responsible trading.",
+        "ru": "Финансовые продукты, предлагаемые на этом веб-сайте, включают цифровые инструменты, контракты на разницу цен (CFD) и другие сложные производные инструменты и финансовые продукты. Варианты торговли могут подойти не всем. Торговля CFD сопряжена с высоким уровнем риска, поскольку кредитное плечо может работать как в вашу пользу, так и во вред. В результате продукты, предлагаемые на этом веб-сайте, могут не подходить для всех инвесторов из-за риска потери всего вложенного капитала. Вы никогда не должны инвестировать деньги, которые вы не можете позволить себе потерять, и никогда не торговать заемными деньгами. Прежде чем торговать предлагаемыми сложными финансовыми продуктами, обязательно ознакомьтесь с сопутствующими рисками и узнайте о безопасной и ответственной торговле."
+    }
+}]

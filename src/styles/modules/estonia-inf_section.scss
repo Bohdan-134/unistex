@@ -1,0 +1,31 @@
+@import '../utils/utils.main.scss';
+.estonia-inf {
+    height: 563px;
+    background-color: #162027;
+    @include flex(row, null, null);
+}
+
+.estonia-inf__container {
+    position: relative;
+    width: 865px;
+    height: 470px;
+    margin: 57px 0px 0px -101px;
+    .shadow_circle {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 585px;
+        height: 100%;
+    }
+    .estonia-inf__text {
+        text-align: center;
+        margin-top: 150px;
+        @include font(26px, 200, 30px, $color_white);
+    }
+    #start-trading {
+        width: 341px;
+        height: 50px;
+        display: block;
+        margin: 88px auto 0;
+    }
+}

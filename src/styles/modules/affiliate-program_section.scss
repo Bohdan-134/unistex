@@ -1,0 +1,48 @@
+@import '../utils/utils.main.scss';
+.aff-program {
+    height: 551px;
+    position: relative;
+    background: #020001;
+    overflow: hidden;
+    .aff-program__left-bg {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .aff-program__right-bg-wrap {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        .aff-program__right-bg-shadow {
+            position: absolute;
+            top: -50px;
+            width: 1647px;
+            height: 728px;
+            transform: rotate(-22deg);
+            background: rgba(79, 192, 255, 0.3);
+            mix-blend-mode: screen;
+            filter: blur(250px);
+            z-index: 2;
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+        margin-top: 136px;
+        padding: 0px 129px;
+    }
+}
+
+.aff-program__content {
+    .aff-program__title {
+        @include font(43px, 700, 51px, $color_white);
+    }
+    .aff-program__text {
+        margin: 22px 0px 42px;
+        @include font(26px, 200, 31px, $color_white)
+    }
+    .aff-program__btn {
+        width: 233px;
+        height: 44px;
+    }
+}

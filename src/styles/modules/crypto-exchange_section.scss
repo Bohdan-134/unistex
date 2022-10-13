@@ -1,0 +1,46 @@
+@import '../utils/utils.main.scss';
+.crypto-exchange {
+    overflow: hidden;
+    background: linear-gradient(205.95deg, #192227 7.22%, #192227 69.88%);
+    position: relative;
+    padding: 53px 10px 50px;
+    .container {
+        padding-left: 116px;
+        .crypto-exchange__title {
+            max-width: 798px;
+            text-transform: uppercase;
+            @include font(55px, 300, 65px, $color_green);
+        }
+    }
+    .crypto-exchange__bg5 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .shadow_circle {
+        width: 700px;
+        height: 700px;
+        top: 107px;
+        left: 340px;
+        position: absolute;
+    }
+}
+
+.crypto-exchange__list {
+    margin: 22px 0px 36px 38px;
+    max-width: 500px;
+    .crypto-exchange__item {
+        text-transform: uppercase;
+        margin-bottom: 13px;
+        list-style-type: disc;
+        @include font(22px, 300, 27px, #EBE7E5);
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+#start-trading {
+    width: 323px;
+    height: 58px;
+}

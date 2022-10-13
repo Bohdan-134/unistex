@@ -1,0 +1,126 @@
+@import '../utils/utils.main.scss';
+.products {
+    position: relative;
+    .product-back-img {
+        position: absolute;
+        left: 0px;
+        bottom: -10px;
+    }
+    .container {
+        margin-top: 95px;
+        .products-title {
+            text-transform: uppercase;
+            text-align: center;
+            background: radial-gradient(206.43% 206.43% at 50% -20.36%, #141E1E 0%, #0F1415 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            mix-blend-mode: screen;
+            margin-bottom: 30px;
+            @include font(180px, 700, 207px, null);
+        }
+    }
+}
+
+.products-list {
+    @include flex(row, center, null);
+    flex-wrap: wrap;
+    .product-item {
+        max-width: 300px;
+        margin: 50px 100px;
+        @include flex(column, null, center);
+        img {
+            height: 95px;
+        }
+        .product-item__title {
+            text-align: center;
+            margin: 15px 0px;
+            @include font(36px, 700, 41px, $color_white);
+        }
+        .product-item__text,
+        ul li {
+            text-align: center;
+            @include font(18px, 200, 21px, $color_white);
+        }
+        ul {
+            text-align: center;
+            li {
+                position: relative;
+                display: inline-block;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: -15px;
+                    transform: translateY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $color_white;
+                }
+            }
+        }
+    }
+}
+
+.products-container__purpose {
+    background: rgba(56, 92, 95, 0.3);
+    box-shadow: inset 1px 1px 4px #4FFFCA;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    margin-top: 95px;
+    padding: 70px 10px 50px;
+    @include flex(column, flex-start, center);
+    .purpose-text {
+        text-align: center;
+        margin: 42px 0px 60px;
+        @include font(20px, 200, 23px, $color_white);
+    }
+}
+
+.purpose-list {
+    @include flex(row, center, center);
+    .purpose-item {
+        width: 100%;
+        max-width: 442px;
+        min-height: 123px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0px 20px;
+        border-right: 1px solid #EBE7E5;
+        @include font(18px, 200, 21px, #EBE7E5);
+        @include flex(row, center, center);
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.products-line {
+    width: 100%;
+    height: 1px;
+    background-color: $color_green;
+    margin: 70px 0 45px;
+}
+
+.product-container__bitcoin {
+    text-align: center;
+    @include flex(column, null, center);
+    .bitcoin-title {
+        margin-bottom: 20px;
+        @include font(43px, 700, 49px, $color_white);
+    }
+    .bitcoin-text {
+        max-width: 1300px;
+        @include font(26px, 300, 31px, $color_white);
+    }
+    .bitcoin__strong-text {
+        margin-bottom: 30px;
+        @include font(26px, 700, 31px, $color_white);
+    }
+    .button-registration {
+        width: 233px;
+        height: 44px;
+    }
+}

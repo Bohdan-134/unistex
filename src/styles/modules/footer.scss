@@ -1,0 +1,51 @@
+@import '../utils/utils.main.scss';
+.footer {
+    padding: 60px 10px;
+    .container {
+        .footer-address-list {
+            margin: 30px 0px 42px;
+            @include font(15px, 300, 18px, $color_white);
+            .footer-address-item {
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .footer-list__links {
+            margin-bottom: 17px;
+            @include flex(row, flex-start, center);
+            .footer-item__links {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #5E5E5E;
+                margin: 0px 3px;
+                transition: .2s;
+                @include flex(row, center, center);
+                a {
+                    font-size: 18px;
+                    color: #0D1214;
+                }
+                &:hover {
+                    background-color: #0D1214;
+                    a {
+                        color: #5E5E5E;
+                    }
+                }
+            }
+        }
+        .footer-spoiler {
+            .footer-spoiler__title {
+                cursor: pointer;
+                opacity: 0.6;
+                @include font(18px, 700, 22px, $color_white);
+            }
+            .footer-spoiler__text {
+                transition: none;
+                padding-top: 17px;
+                opacity: 0.6;
+                @include font(12px, 400, 15px, $color_white);
+            }
+        }
+    }
+}

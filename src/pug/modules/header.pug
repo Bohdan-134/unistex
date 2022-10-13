@@ -1,0 +1,22 @@
+.container
+    .header_top
+        a(href="/").logo 
+            img(src="./img/header/logo.svg", alt="logo").logo__img
+        .header-help_wrap
+            .btn-login_wrap 
+                button#open-modal-login.lan(data-lan="btnLogin") Вход
+                span.vertical-line |
+                button#open-modal-registration.lan(data-lan="btnRegistration") Регистрация
+            .lang 
+                select(name="select")#select
+                    option(value="ru" selected) ru
+                    option(value="en") en
+    .header-main 
+        .bg-img_0 0
+        .shadow_circle 
+        .header-content
+            .percent %
+            .header-content__text 
+                span.lan(data-lan="headerContentText") на ввод средств 
+                button#start.btn.lan(data-lan="btnStart") Начать
+        img(src="./img/header/rocket.webp", alt="rocket").header-rocket
