@@ -6,8 +6,8 @@ gsap.to(".product-back-img", {
     durection: 1,
     transition: .5,
     scrollTrigger: {
-        trigger: ".product-back-img",
-        start: "200px center",
+        trigger: ".products-container__purpose",
+        start: "top center",
         end: "center center",
         scrub: true,
         id: "scrub"
@@ -22,7 +22,7 @@ gsap.to(".shadow_circle__gsap", {
     scrollTrigger: {
         trigger: ".estonia-inf",
         start: "top center",
-        end: "bottom center",
+        end: "center center",
         scrub: true,
         //markers: true,
         id: "scrub"

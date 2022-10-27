@@ -154,6 +154,9 @@
 @media screen and (max-width: 750px) {
     .products {
         padding: 80px 20px 0;
+        .product-back-img {
+            bottom: 450px;
+        }
     }
     .products-list {
         margin-top: 60px;
