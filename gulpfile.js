@@ -51,7 +51,9 @@ function styles() {
     return gulp
         .src(paths.styles.src)
         .pipe(sass())
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(cssmin())
         .pipe(gulp.dest(paths.styles.dist))
         .pipe(browserSync.stream());

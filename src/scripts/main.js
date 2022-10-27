@@ -1,3 +1,35 @@
+gsap.registerPlugin(ScrollTrigger);
+
+// img-product
+gsap.to(".product-back-img", {
+    opacity: 1,
+    durection: 1,
+    transition: .5,
+    scrollTrigger: {
+        trigger: ".product-back-img",
+        start: "200px center",
+        end: "center center",
+        scrub: true,
+        id: "scrub"
+    }
+});
+
+// estonia
+gsap.to(".shadow_circle__gsap", {
+    opacity: 1,
+    scale: 1,
+    transition: .5,
+    scrollTrigger: {
+        trigger: ".estonia-inf",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+        //markers: true,
+        id: "scrub"
+    }
+});
+
+
 // accordeon
 $(document).ready(function() {
     $('.accordeon-item__title').click(function(event) {
@@ -8,14 +40,22 @@ $(document).ready(function() {
     });
 });
 
+// registration
+
+const btnsRegistration = document.querySelectorAll('.btn-registration');
+
+Array.from(btnsRegistration).forEach(item => item.addEventListener('click', () => openModal('registration')))
+
+
+
+const btnStart = document.getElementById('start');
+btnStart.addEventListener('click', () => openModal('registration'));
+
 // modal
 const openModaLogin = document.getElementById('open-modal-login');
-const openModalRegistration = document.getElementById('open-modal-registration');
+
 
 openModaLogin.addEventListener('click', openModal);
-openModalRegistration.addEventListener('click', function() {
-    openModal('registration');
-});
 
 function createModal(type) {
     return `
@@ -80,8 +120,23 @@ function getLangJson() {
         })
 }
 
-function translate() {
+AOS.init({
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-}
 
-/*  */
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 500, // values from 0 to 3000, with step 50ms
+    duration: 800, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});

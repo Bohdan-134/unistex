@@ -4,6 +4,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // aos
+        link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
         // google fonts
         link(rel='preconnect' href='https://fonts.googleapis.com')
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
@@ -19,18 +21,21 @@ html(lang="en")
         header 
             include ./pug/modules/header.pug
         main
-            //include ./pug/modules/estonia-inf_section.pug
-            //include ./pug/modules/products_section.pug
-            //include ./pug/modules/ads_section.pug
+            include ./pug/modules/estonia-inf_section.pug
+            include ./pug/modules/products_section.pug
+            include ./pug/modules/ads_section.pug
             //include ./pug/modules/partners_section.pug
             //include ./pug/modules/crypto-exchange_section.pug
             //include ./pug/modules/app_section.pug
             //include ./pug/modules/affiliate-program_section.pug
             //include ./pug/modules/faq_section.pug
-        footer.footer 
-            //include ./pug/modules/footer.pug
+        //footer.footer
+            include ./pug/modules/footer.pug
         button#open-mobile-menu
             i.bx.bx-chevron-up
         script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js")
+        script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
         script(src="./js/main.js")
             

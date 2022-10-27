@@ -1,7 +1,9 @@
 @import '../utils/utils.main.scss';
 .estonia-inf {
     height: 563px;
+    position: relative;
     background-color: #162027;
+    overflow: hidden;
     @include flex(row, null, null);
 }
 
@@ -12,20 +14,46 @@
     margin: 57px 0px 0px -101px;
     .shadow_circle {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 19%;
         width: 585px;
         height: 100%;
+        opacity: 0;
+        transform: scale(0);
     }
     .estonia-inf__text {
         text-align: center;
         margin-top: 150px;
         @include font(26px, 200, 30px, $color_white);
     }
-    #start-trading {
+    .btn {
         width: 341px;
         height: 50px;
         display: block;
         margin: 88px auto 0;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .estonia-inf {
+        img {
+            width: 46%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .estonia-inf {
+        @include flex(row, center, center);
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            opacity: .2;
+        }
+    }
+    .estonia-inf__container {
+        margin: 0px;
+        padding: 0px 20px;
     }
 }
