@@ -254,26 +254,27 @@ header {
 @media screen and (max-width: 450px) and (max-height: 900px) {
     .header-main {
         .bg-img_0 {
-            top: 11%;
-            font-size: 400px;
+            top: 5%;
+            font-size: 360px;
         }
         .shadow_circle {
             display: none;
         }
         .header-rocket {
-            top: 2%;
-            right: 22%;
-            width: 450px;
+            top: 0%;
+            right: 21%;
+            width: 400px;
         }
         .header-content {
-            top: 45%;
+            top: 35%;
             .percent {
                 font-size: 160px;
                 line-height: 160px;
             }
             .header-content__text {
                 span {
-                    @include font(45px, 700, 45px, #EBE7E5);
+                    margin: 0px;
+                    @include font(40px, 700, 40px, #EBE7E5);
                 }
                 #start {
                     width: 75%;
