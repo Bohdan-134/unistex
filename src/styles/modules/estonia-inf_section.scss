@@ -57,3 +57,18 @@
         padding: 0px 20px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .estonia-inf__container {
+        @include flex(column, center, center);
+        .estonia-inf__text {
+            margin-top: 0px;
+        }
+        .btn {
+            margin: 40px auto 0;
+        }
+        .shadow_circle {
+            display: none;
+        }
+    }
+}
