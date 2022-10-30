@@ -169,6 +169,7 @@ header {
 @media screen and (max-width: 950px) {
     header {
         min-height: auto;
+        height: calc(var(--vh, 1vh) * 100);
         //height: 100vh;
     }
     .header_top {
