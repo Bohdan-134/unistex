@@ -12,16 +12,6 @@
 @import './modules/faq_section.scss';
 @import './modules/footer.scss';
 @import './modules/login-registration-modal.scss';
-body {
-    min-height: 100vh;
-    /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
-}
-
-html {
-    height: -webkit-fill-available;
-}
-
 .container {
     max-width: 1574px;
     width: 100%;
