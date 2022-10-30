@@ -193,3 +193,42 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .products {
+        padding: 40px 20px 0;
+    }
+    .products-list {
+        margin-top: 30px;
+        .product-item {
+            margin: 30px 0;
+            img {
+                max-height: 65px;
+            }
+            .product-item__title {
+                @include font(30px, 700, 30px, #fff);
+            }
+            ul {
+                li {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .products-line {
+        margin: 30px 0 40px;
+    }
+    .product-container__bitcoin {
+        .bitcoin-title {
+            @include font(36px, 700, 36px, #fff);
+        }
+        .bitcoin-text {
+            @include font(18px, 300, 20px, #fff);
+        }
+        .bitcoin__strong-text {
+            @include font(21px, 700, 23px, #fff);
+        }
+    }
+}
