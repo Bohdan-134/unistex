@@ -230,7 +230,7 @@ header {
     .header-main {
         .bg-img_0 {
             top: 25%;
-            font-size: 500px;
+            @include font(500px, 700, 460px, null);
         }
         .shadow_circle {
             top: 18%;
@@ -254,8 +254,8 @@ header {
 @media screen and (max-width: 450px) and (max-height: 900px) {
     .header-main {
         .bg-img_0 {
-            top: 5%;
-            font-size: 360px;
+            top: 20%;
+            @include font(360px, 700, 270px, null);
         }
         .shadow_circle {
             display: none;
@@ -266,18 +266,18 @@ header {
             width: 400px;
         }
         .header-content {
-            top: 35%;
+            top: 42%;
             .percent {
-                font-size: 160px;
-                line-height: 160px;
+                @include font(140px, 700, 105px, null);
             }
             .header-content__text {
                 span {
-                    margin: 0px;
+                    margin: 5px 0;
                     @include font(40px, 700, 40px, #EBE7E5);
                 }
                 #start {
                     width: 75%;
+                    height: 50px;
                 }
             }
         }
