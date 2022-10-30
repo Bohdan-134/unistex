@@ -92,6 +92,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        min-height: -webkit-fill-available;
+    }
     .container {
         max-width: 400px;
     }
