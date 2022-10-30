@@ -92,6 +92,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
     .container {
         max-width: 400px;
     }
