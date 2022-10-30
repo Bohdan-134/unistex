@@ -29,6 +29,18 @@ gsap.to(".shadow_circle__gsap", {
     }
 });
 
+gsap.to(".container-perspective", {
+    rotateX: '0deg',
+    scrollTrigger: {
+        trigger: ".products-container__purpose",
+        start: "top center",
+        end: "center center",
+        scrub: true,
+        //markers: true,
+        id: "scrub"
+    }
+});
+
 
 // accordeon
 $(document).ready(function() {
