@@ -24,12 +24,12 @@ html(lang="en")
             include ./pug/modules/estonia-inf_section.pug
             include ./pug/modules/products_section.pug
             include ./pug/modules/ads_section.pug
-            //include ./pug/modules/partners_section.pug
-            //include ./pug/modules/crypto-exchange_section.pug
-            //include ./pug/modules/app_section.pug
-            //include ./pug/modules/affiliate-program_section.pug
-            //include ./pug/modules/faq_section.pug
-        //footer.footer
+            include ./pug/modules/partners_section.pug
+            include ./pug/modules/crypto-exchange_section.pug
+            include ./pug/modules/app_section.pug
+            include ./pug/modules/affiliate-program_section.pug
+            include ./pug/modules/faq_section.pug
+        footer.footer
             include ./pug/modules/footer.pug
         button#open-mobile-menu
             i.bx.bx-chevron-up
@@ -37,5 +37,5 @@ html(lang="en")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js")
         script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
-        script(src="./js/main.js")
+        script(src="./js/main.js" type="module")
             

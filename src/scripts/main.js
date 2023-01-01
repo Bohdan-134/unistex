@@ -1,3 +1,5 @@
+import './animation/estonia-inf.js';
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -21,21 +23,6 @@ gsap.to(".product-back-img", {
         start: "top center",
         end: "center center",
         scrub: true,
-        id: "scrub"
-    }
-});
-
-// estonia
-gsap.to(".shadow_circle__gsap", {
-    opacity: 1,
-    scale: 1,
-    transition: .5,
-    scrollTrigger: {
-        trigger: ".estonia-inf",
-        start: "top center",
-        end: "center center",
-        scrub: true,
-        //markers: true,
         id: "scrub"
     }
 });

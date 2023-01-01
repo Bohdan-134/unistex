@@ -21,7 +21,7 @@ const paths = {
         dist: 'dist/css'
     },
     scripts: {
-        src: 'src/scripts/*.js',
+        src: 'src/scripts/**/*.js',
         dist: 'dist/js/'
     },
     img: {

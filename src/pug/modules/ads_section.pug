@@ -2,8 +2,8 @@ section.ads
     img(src="./img/ads_section/ads_img1.svg", alt="bg-img").ads_img1
     img(src="./img/ads_section/ads_img2.svg", alt="bg-img").ads_img2
     .container
-        img(src="./img/ads_section/ads_rocket.webp", alt="rocket")
+        img(src="./img/ads_section/ads_rocket.webp", alt="rocket" data-aos="fade-up" data-aos-offset="50").ads-rocket__img
         .ads-text-content
-            .ads-text-content__percent 0%
-            .ads-text-content__text.lan(data-lan="adsTextContentText") на ввод средств
+            span.ads-text-content__percent(data-aos="fade-up" data-aos-offset="50" data-aos-anchor=".ads-rocket__img") 0%
+            span.ads-text-content__text.lan(data-lan="adsTextContentText") на ввод средств
             button.btn.ads-btn#buy.lan(data-lan="adsBtn") КУПИТЬ BITCOIN

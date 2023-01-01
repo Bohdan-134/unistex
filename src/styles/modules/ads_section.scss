@@ -4,6 +4,7 @@
     overflow: hidden;
     position: relative;
     margin-top: 83px;
+    @include flex(row, center, center);
     .ads_img1,
     .ads_img2 {
         position: absolute;
@@ -48,7 +49,7 @@
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1550px) {
     .ads {
         display: none;
     }
