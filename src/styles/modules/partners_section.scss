@@ -1,39 +1,41 @@
 @import '../utils/utils.main.scss';
 .partners {
     padding: 75px 65px 128px;
-    .partners__title {
-        text-transform: uppercase;
-        text-align: center;
-        background: radial-gradient(206.43% 206.43% at 50% -20.36%, #141C1E 0%, #0F1415 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-        mix-blend-mode: screen;
-        @include font(180px, 700, 207px, null);
+    .title-gradient {
+        margin-bottom: 35px;
     }
-}
-
-.partners__list {
-    width: 100%;
-    margin-top: 33px;
-    position: relative;
-    overflow: hidden;
-    @include flex(row, space-between, center);
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0px;
-        height: 100%;
-        width: 30%;
+    .container {
+        position: relative;
+        overflow: hidden;
+        .partners__list {
+            @include flex(row, space-between, center);
+        }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            width: 30%;
+            z-index: 2;
+        }
+        &::before {
+            left: -1px;
+            background: linear-gradient(90deg, #0E1314 0%, rgba(14, 19, 20, 0.97) 56.25%, rgba(14, 19, 20, 0) 100%);
+        }
+        &::after {
+            right: -1px;
+            background: linear-gradient(-90deg, #0E1314 0%, rgba(14, 19, 20, 0.97) 56.25%, rgba(14, 19, 20, 0) 100%);
+        }
     }
-    &::before {
-        left: -1px;
-        background: linear-gradient(90deg, #0E1314 0%, rgba(14, 19, 20, 0.97) 56.25%, rgba(14, 19, 20, 0) 100%);
-    }
-    &::after {
-        right: -1px;
-        background: linear-gradient(-90deg, #0E1314 0%, rgba(14, 19, 20, 0.97) 56.25%, rgba(14, 19, 20, 0) 100%);
+    @media screen and (max-width: 1440px) {
+        .container {
+            .partners__list {
+                @include flex(row, center, center);
+                .partners__item {
+                    margin: 0 35px;
+                }
+            }
+        }
     }
 }

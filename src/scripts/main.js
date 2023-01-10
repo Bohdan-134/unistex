@@ -1,4 +1,4 @@
-import './animation/estonia-inf.js';
+import './animation/main.animation.js';
 
 gsap.registerPlugin(ScrollTrigger);
 

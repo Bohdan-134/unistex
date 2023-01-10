@@ -5,7 +5,9 @@
     position: relative;
     padding: 53px 10px 50px;
     .container {
-        padding-left: 116px;
+        position: relative;
+        z-index: 20;
+        padding-left: 6%;
         .crypto-exchange__title {
             max-width: 798px;
             text-transform: uppercase;
@@ -43,4 +45,43 @@
 #start-trading {
     width: 323px;
     height: 58px;
+}
+
+@media screen and (max-width: 1440px) {
+    .crypto-exchange {
+        .container {
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .crypto-exchange {
+        .crypto-exchange__bg5 {
+            width: 440px;
+            height: 562px;
+            top: auto;
+            bottom: -90px;
+            right: -10%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .crypto-exchange {
+        height: 921px;
+        padding: 115px 0px 50px;
+        .container {
+            padding: 0 5%;
+            .crypto-exchange__title {
+                @include font(35px, 300, 45px, $color_green)
+            }
+        }
+        .shadow_circle {
+            width: 600px;
+            height: 600px;
+            top: 10%;
+            left: 25%;
+        }
+    }
 }

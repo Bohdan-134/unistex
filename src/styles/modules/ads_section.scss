@@ -51,6 +51,16 @@
 
 @media screen and (max-width: 1550px) {
     .ads {
+        .container {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ads {
         display: none;
     }
 }
