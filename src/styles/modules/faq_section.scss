@@ -1,56 +1,94 @@
 @import '../utils/utils.main.scss';
 .faq {
     padding: 125px 10px 121px;
-    .faq__title {
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 25px;
-        @include font(50px, 400, 12px, #EBE7E5);
+    .container {
+        .faq__title {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            @include font(50px, 400, 50px, #EBE7E5);
+        }
     }
-    .container {}
 }
 
 .faq-accordeon-list {
     .accordeon-item {
+        position: relative;
         border-bottom: 1px solid #EBE7E5;
         .accordeon-item__title {
             position: relative;
             padding: 30px 0px;
             text-transform: uppercase;
             cursor: pointer;
-            @include font(26px, 700, 16px, $color_green);
-            &::before,
-            &::after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                width: 25px;
-                height: 1px;
-                background-color: $color_green;
-                transition: .3s;
-            }
-            &::before {
-                right: 17px;
-                transform: translateY(-50%) rotate(45deg);
-            }
-            &::after {
-                right: 0px;
-                transform: translateY(-50%) rotate(-45deg);
-            }
+            @include font(26px, 700, 26px, $color_green);
         }
-        .accordeon-item__title-active {
-            &::before {
-                transform: translateY(-50%) rotate(-45deg);
-            }
-            &::after {
-                transform: translateY(-50%) rotate(45deg);
-            }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 25px;
+            height: 1px;
+            background-color: $color_green;
+            transition: .3s;
+        }
+        &::before {
+            right: 17px;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        &::after {
+            right: 0px;
+            transform: translateY(-50%) rotate(-45deg);
         }
         .accordeon-item__text {
             padding: 0px 10px 30px 0px;
             display: none;
             transition: none;
             @include font(26px, 200, 26px, #EBE7E5);
+        }
+    }
+    .accordeon-item__active {
+        &::before {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+        &::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .faq-accordeon-list {
+        .accordeon-item {
+            .accordeon-item__title,
+            .accordeon-item__text {
+                max-width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .faq {
+        padding: 60px 10px 30px;
+        .container {
+            .faq__title {
+                text-align: left;
+                margin-bottom: 35px;
+                @include font(50px, 400, 50px, #EBE7E5);
+            }
+        }
+    }
+    .faq-accordeon-list {
+        .accordeon-item {
+            .accordeon-item__title {
+                padding: 20px 0px;
+                max-width: 95%;
+                @include font(18px, 700, 18px, $color_green);
+            }
+            .accordeon-item__text {
+                @include font(18px, 200, 18px, #EBE7E5);
+            }
         }
     }
 }

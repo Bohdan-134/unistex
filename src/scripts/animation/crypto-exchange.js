@@ -1,8 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(".crypto-exchange__bg5", {
-    scale: 1.5,
-    rotate: 20,
+    scale: 2,
+    rotate: 30,
 }, {
     scale: 1,
     rotate: 0,

@@ -2,8 +2,6 @@ import './animation/main.animation.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
@@ -11,7 +9,6 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
-
 
 // img-product
 gsap.to(".product-back-img", {
@@ -42,10 +39,11 @@ gsap.to(".container-perspective", {
 
 // accordeon
 $(document).ready(function() {
-    $('.accordeon-item__title').click(function(event) {
-        $(this).toggleClass('accordeon-item__title-active').next().slideToggle(300);
+    $('.accordeon-item').click(function(event) {
+        $(this).toggleClass('accordeon-item__active');
+        $(event.currentTarget.children[1]).slideToggle(300);
     });
-    $('.footer-spoiler__title').click(function(event) {
+    $('.footer-spoiler__title').click(function() {
         $(this).next().slideToggle(300);
     });
 });

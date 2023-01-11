@@ -13,19 +13,6 @@
         position: relative;
         overflow: hidden;
         @include flex(row, space-between, flex-start);
-        .app__img-wrap {
-            position: relative;
-            &::after {
-                content: '';
-                height: 1px;
-                width: 1500px;
-                position: absolute;
-                bottom: 131px;
-                left: 235px;
-                z-index: 3;
-                background-color: $color_green;
-            }
-        }
     }
 }
 
@@ -35,23 +22,32 @@
     text-align: right;
     @include flex(column, null, flex-end);
     .app__title {
+        position: relative;
+        display: flex;
         text-transform: uppercase;
         margin-bottom: 28px;
         @include font(48px, 700, 55px, $color_white);
     }
     .app__text {
+        position: relative;
         @include font(20px, 200, 23px, $color_white);
     }
     .app__text-last {
+        display: inline;
         margin: 20px 0px;
     }
     .app-btn {
+        position: relative;
         width: 234px;
         height: 55px;
         border: 1px solid $color_white;
         color: $color_white;
         margin-top: 20px;
+        transition: .5s;
         @include flex(row, center, center);
+        &:hover {
+            box-shadow: 0 0 7px $color_white;
+        }
         .fa-apple {
             font-size: 35px;
             margin-right: 22px;
@@ -69,5 +65,63 @@
                 }
             }
         }
+    }
+}
+
+.app__img-wrap {
+    position: relative;
+    .app-line-decor {
+        position: absolute;
+        height: 1px;
+        width: 1400px;
+        bottom: 131px;
+        left: 235px;
+        z-index: 3;
+        background-color: $color_green;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .app {
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .app-content {
+        max-width: 442px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .app {
+        .shadow_circle {
+            position: absolute;
+            width: 619px;
+            height: 619px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+        .container {
+            @include flex(row, center, null);
+        }
+    }
+    .app-content {
+        padding: 0px;
+        .app__title {
+            @include font(35px, 700, 45px, $color_white);
+        }
+        .app__text {
+            @include font(20px, 200, 23px, $color_white);
+        }
+        .app__text-last {
+            margin: 10px 0px;
+        }
+    }
+    .app__img-wrap {
+        display: none;
     }
 }

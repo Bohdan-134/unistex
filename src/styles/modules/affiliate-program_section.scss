@@ -8,6 +8,7 @@
         position: absolute;
         bottom: 0px;
         left: 0px;
+        z-index: 2;
     }
     .aff-program__right-bg-wrap {
         position: absolute;
@@ -24,6 +25,9 @@
             filter: blur(250px);
             z-index: 2;
         }
+        .aff-program__right-bg-mobile {
+            display: none;
+        }
     }
     .container {
         position: relative;
@@ -35,14 +39,52 @@
 
 .aff-program__content {
     .aff-program__title {
+        position: relative;
         @include font(43px, 700, 51px, $color_white);
     }
     .aff-program__text {
+        position: relative;
         margin: 22px 0px 42px;
         @include font(26px, 200, 31px, $color_white)
     }
     .aff-program__btn {
+        position: relative;
         width: 233px;
         height: 44px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .aff-program {
+        @include flex(row, null, center);
+        .container {
+            padding: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .aff-program {
+        height: 926px;
+        .aff-program__left-bg {
+            display: none;
+        }
+        .aff-program__right-bg-wrap {
+            top: auto;
+            bottom: 0;
+            .aff-program__right-bg {
+                display: none;
+            }
+            .aff-program__right-bg-mobile {
+                display: block;
+            }
+            .aff-program__right-bg-shadow {
+                top: -200px;
+            }
+        }
+        .container {
+            padding: 0 20px;
+        }
     }
 }
