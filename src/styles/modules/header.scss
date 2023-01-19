@@ -27,6 +27,7 @@ header {
                 background-color: transparent;
                 text-transform: uppercase;
                 opacity: 0.7;
+                transition: .5s;
                 @include font(14px, 400, 17px, $color_white);
                 &:hover {
                     color: $color_green;

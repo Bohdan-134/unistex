@@ -36,6 +36,7 @@
     background-color: $color_green;
     text-transform: uppercase;
     cursor: pointer;
+    transition: background-color .5s;
     @include font(14px, 700, 17px, #192227);
     &:hover {
         background-color: #41bb97;

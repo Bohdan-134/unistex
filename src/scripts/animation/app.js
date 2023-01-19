@@ -7,8 +7,8 @@ gsap.fromTo(".app-line-decor", {
     width: 1100,
     scrollTrigger: {
         trigger: ".app",
-        start: "70% 90%",
-        end: "80% 90%",
+        start: "80% 90%",
+        end: "95% 90%",
         scrub: true,
     },
 });

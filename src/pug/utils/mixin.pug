@@ -1,0 +1,10 @@
+mixin productList({num, title, text})
+    li.product-item 
+        img(src=`../../img/products_section/products_img${num}.svg`, alt="img" data-aos="fade-up")
+        h4.product-item__title.lan(data-lan=`productItemTitle${num}` data-aos="fade-up")= title
+        p.product-item__text.lan(data-lan=`productItemText${num}` data-aos="fade-up")= text
+
+mixin faqList({dataLan, title, text})
+    li.accordeon-item
+        h5.accordeon-item__title.lan(data-lan!=dataLan)=title
+        p.accordeon-item__text= text

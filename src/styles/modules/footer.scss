@@ -21,6 +21,7 @@
                 background-color: #5E5E5E;
                 margin: 0px 3px;
                 transition: .2s;
+                cursor: pointer;
                 @include flex(row, center, center);
                 a {
                     font-size: 18px;

@@ -1,0 +1,34 @@
+{
+    "title": {
+        "registration": {
+            "ru": "Регистрация",
+            "en": "Registration"
+        },
+        "login": {
+            "ru": "Вход",
+            "en": "Login"
+        }
+    },
+    "inputName": {
+        "ru": "Имя",
+        "en": "name"
+    },
+    "inputEmail": {
+        "ru": "эл. адрес",
+        "en": "email"
+    },
+    "inputPassword": {
+        "ru": "пароль",
+        "en": "password"
+    },
+    "submit": {
+        "registration": {
+            "ru": "Регистрация",
+            "en": "Registration"
+        },
+        "login": {
+            "ru": "Вход",
+            "en": "Login"
+        }
+    }
+}

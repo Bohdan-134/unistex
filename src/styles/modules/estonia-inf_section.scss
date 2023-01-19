@@ -19,11 +19,13 @@
         height: 100%;
     }
     .estonia-inf__text {
+        position: relative;
         text-align: center;
         margin-top: 150px;
         @include font(26px, 200, 30px, $color_white);
     }
     .btn {
+        position: relative;
         width: 341px;
         height: 50px;
         display: block;
