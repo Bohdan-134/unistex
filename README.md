@@ -17,3 +17,6 @@
 
 ## Task manager
 - gulp
+
+## Description
+This project implements page translation using json. There is an adaptation for mobile devices
