@@ -13,7 +13,6 @@
 
 ## Libraries
 - GSAP
-- Swiper
 - AOS
 
 ## Task manager
